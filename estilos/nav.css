@@ -1,0 +1,129 @@
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    position: relative;
+    background-color: #EB4277;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+.logo{
+display: flex;
+margin-left: 20px;
+justify-content: center;
+align-items: center;
+font-weight: 600;
+padding-right: 5px;
+padding-left: 5px;
+font-size: 22px;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    
+ 
+    
+}
+.lista li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+   
+}
+.lista li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    padding: 10px;
+}
+
+.lista li a:hover{
+    
+    background-color: #EB42DC;
+}
+.menu_responsive{
+    display: none;
+}
+
+#checkbox{
+    display: none;
+}
+.lista_responsiva li{
+    padding: 5px;
+  
+}
+.lista_responsiva li a{
+    
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+.lista_responsiva li a:hover{
+    color:#ff94f6;
+   
+}
+
+@media (max-width:550px){
+    .lista_responsiva a{
+        padding-bottom: 100px;
+        color: white;
+    }
+    .lista_responsiva{
+       
+        position: absolute;
+        left: -550px;
+        text-decoration: none;
+        list-style: none;
+        height: 100vh;
+        width: 100%;
+        background-color: #EB4277;
+       
+        
+       
+        color: white;
+        z-index: 100;
+        transition: .5s all;
+}
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: #EB4277;
+        width: 100%;
+    }
+    .lista{
+        display: none;
+     
+    }
+    .menu_responsive{
+        display: inline-block;
+        font-size: 32px;
+        
+    }
+    
+    #checkbox{
+        display: none;
+    }
+    #checkbox:checked~ .lista_responsiva{
+        
+        
+       
+        flex-direction: column;
+        font-size: 22px;
+        left: 0;
+    }
+}

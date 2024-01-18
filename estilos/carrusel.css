@@ -1,0 +1,123 @@
+.carousel{
+   
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    
+    backdrop-filter: blur(5px);
+}
+
+.carousel button{
+    background-color:black;
+    height: 100px;
+    width: 100px;
+
+}
+.carousel-inner{
+    margin-top: 20px;
+    
+    backdrop-filter: blur(5px);
+    
+}
+
+.c_card{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    width: 400px;
+    box-shadow: 0px 0px 10px 1px rgba(255, 0, 221, 0.384);
+    height: 100px;
+    color: black;
+   
+
+}
+.clientes_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    
+    height: 100%;
+    font-size: 15px;
+}
+.c_card img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.manipulacion{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+.manipulacion h1{
+    margin-top: 30px;
+}
+.anonimo{
+    color: rgb(82, 82, 82);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.imagenes_muestra{
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.164);
+}
+@media (max-width:550px){
+
+<<<<<<< HEAD
+    .clientes_cards{
+        
+        gap:20px;
+        margin-top: 0px;
+        height: 100%;
+        font-size: 15px;
+=======
+    .carousel-item .c_card{
+    
+        border-radius: 10px;
+        margin: auto;
+        background-color: white;
+        width: 100%;
+        font-size: 12px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.24);
+        height: 100px;
+        color: black;
+        padding: 10px;
+    
+    }
+    .carousel button{
+       background-color:black;
+        transform: scale(.5);
+     
+>>>>>>> b219a926053f036923fd1fcbbfcf825383226e9b
+    }
+    .manipulacion{
+        
+        
+      
+        align-items: center;
+        height: 200vh;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 370px;
+        background-color: white;
+        
+    }
+    .nuestros_clientes{
+        
+        top: 280px;
+        margin-top: 50px;
+    }
+
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos/carta.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/nav.css">
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/carrusel.css">
+    <link rel="stylesheet" href="estilos/paginacion.css">
+    <link rel="stylesheet" href="estilos/carrito.css">
+    <link rel="stylesheet" href="estilos/carrito_flotante.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munsa</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            M  U N S A
+         </div>
+        <div class="menu_responsive">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox"><i class="bi bi-list"></i></label>
+          <ul class="lista_responsiva">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="ropa.html">Ropa</a></li>
+            
+        </ul>
+        </div>
+       
+        <ul class="lista">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="ropa.html">Ropa</a></li>
+            
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+<div class="cartas">
+    <div class="card">
+        <div class="card_img">
+            <img src="recursos/ropa/negro.jpg" alt="">
+        </div>
+        <div class="info">
+            <h1 class="card_info_titulo">Ropa Modelo XXX</h1>
+            <p class="card_info_descripcion">algo casual y elegante para la ocacion</p>
+            <p class="card_info_precio">Precio: 35 <b>USD</b></p>
+            <button class="btn_ropa">Llevar<i class="bi bi-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_img">
+            <img src="recursos/ropa/negro2.jpg" alt="">
+        </div>
+        <div class="info">
+            <h1 class="card_info_titulo">Ropa rosa</h1>
+            <p class="card_info_descripcion">algo casual y elegante para la ocacion</p>
+            <p class="card_info_precio">Precio: 55 <b>USD</b></p>
+            <button class="btn_ropa">Llevar<i class="bi bi-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_img">
+            <img src="recursos/ropa/naranja.jpg" alt="">
+        </div>
+        <div class="info">
+            <h1 class="card_info_titulo">Ropa azul</h1>
+            <p class="card_info_descripcion">algo casual y elegante para la ocacion</p>
+            <p class="card_info_precio">Precio: 10 <b>USD</b></p>
+            <button class="btn_ropa">Llevar<i class="bi bi-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_img">
+            <img src="recursos/ropa/rojo.jpg" alt="">
+        </div>
+        <div class="info">
+            <h1 class="card_info_titulo">Ropa verde</h1>
+            <p class="card_info_descripcion">algo casual y elegante para la ocacion</p>
+            <p class="card_info_precio">Precio: 15 <b>USD</b></p>
+            <button class="btn_ropa">Llevar<i class="bi bi-cart"></i></button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card_img">
+            <img src="recursos/ropa/rosa.jpg" alt="">
+        </div>
+        <div class="info">
+            <h1 class="card_info_titulo">Ropa rosa</h1>
+            <p class="card_info_descripcion">algo casual y elegante para la ocacion</p>
+            <p class="card_info_precio">Precio: 35 <b>USD</b></p>
+            <button class="btn_ropa">Llevar<i class="bi bi-cart"></i></button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card_img">
+            <img src="recursos/ropa/negro3.jpg" alt="">
+        </div>
+        <div class="info">
+            <h1 class="card_info_titulo">Ropa celeste</h1>
+            <p class="card_info_descripcion">algo casual y elegante para la ocacion</p>
+            <p class="card_info_precio">Precio: 5 <b>USD</b></p>
+            <button class="btn_ropa">Llevar<i class="bi bi-cart"></i></button>
+        </div>
+        
+    </div>
+    
+</div>
+<div class="paginacion">
+    <i class="bi bi-arrow-left"></i>
+    <span class="active">1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+    <i class="bi bi-arrow-right"></i>
+    
+</div>
+
+
+<div id ="carrito" class="carrito_invisible">
+    <table class="tabla" id="tabla">
+        <tr class="tabla_encabezado">
+            <td>Producto</td>
+            <td>Precio</td>
+        </tr>
+    </table>
+    <p id="colocar_total"> </p>
+    <button class="btn_pagar"><a class="a_pagar" onclick="pagar()" href="#">Pagar <i class="bi bi-whatsapp"></i></a></button>
+    <i class="close_carrito bi bi-x-lg"></i>
+</div>
+
+
+
+
+
+
+<div class="carrito_flotante" onclick="mostrar_carrito()">
+    <div class="carrito_flotante--cantidad">
+        <span id="carrito_flotante_productos"></span>
+    </div>
+    <div class="carrito_flotante--centro">
+        <span>ver carrito<i class="bi bi-cart2"></i></span>
+    </div>
+    <div class="carrito_flotante--total">
+        <span id="carrito_flotante_total"></span>
+    </div>
+</div>
+<script src="app/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+
+
+.carrito_visible{
+    transition: all 1s;
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    height: 100vh;
+    max-width: 100%;
+    background-color: white;
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top: 0px;}
+    .carrito_invisible{
+        transition: all 1s;
+        position: fixed;
+        z-index: 500;
+        background-color: white;
+        height: 100vh;
+        max-width: 100%;
+        background-color: white;
+        height: 100vh;
+        margin: auto;
+        width: 100%;
+        left: -1800px;
+        top: 0px;
+        text-align: center;
+    }
+.tabla_encabezado{
+    
+    font-weight: 600;
+    
+
+
+}
+table{
+    margin: auto;
+    width: 30%;
+    
+    
+    
+}
+
+table tr td{
+    
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+ 
+}
+.carrito p{
+    margin-top: 30px;
+    text-align: center;
+}
+.btn_pagar{
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(0, 121, 10);
+    
+    border: none;
+    
+    border-radius: 10px;
+}
+.btn_pagar a{
+    color: white;
+    text-decoration: none;
+    
+}
+.btn_pagar:hover{
+    background-color: rgb(0, 177, 15);
+  
+}
+.close_carrito{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 22px;
+}
+.close_carrito:hover{
+    cursor: pointer;
+}
+.btn_basura:hover{
+    cursor: pointer;
+}
+#colocar_total{
+    margin-top: 50px;
+    font-weight: 600;
+}
+@media (max-width:550px){
+    
+.carrito{
+    transition: all 1s;
+    position: absolute;
+    z-index: 500;
+    background-color: white;
+    height: 100vh;
+    max-width: 100%;
+    background-color: white;
+    height: 50vh;
+    margin: auto;
+    width: 100%;
+    left: -500px;
+    top: 0px;
+
+    
+}
+.carrito_visible{
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    height: 100vh;
+    max-width: 100%;
+    background-color: white;
+    height: 50vh;
+    margin: auto;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+
+    
+}
+table{
+    width: 100%;
+}
+.btn_pagar{
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(0, 121, 10);
+    
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+}

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+body{
+<<<<<<< HEAD
+    background-image:url(../marmol.PNG);
+=======
+    background-color:black;
+>>>>>>> b219a926053f036923fd1fcbbfcf825383226e9b
+    
+}

@@ -1,0 +1,30 @@
+footer{
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 140px;
+    
+    width: 90%;
+    margin: auto;
+   
+   
+    
+    
+  
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+footer i{
+ margin-left: 15px; 
+}
+
+footer a:hover{
+    color:#EB42DC;
+}
