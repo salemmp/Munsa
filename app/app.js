@@ -46,6 +46,8 @@ function pagar(){
     let enlace = `https://wa.me/584243296202?text=hola quiero comprar: %0A  %0A ${array_pagar}%0A Total: ${total} USD`
     a_pagar.setAttribute("href",enlace)
     array_pagar =[]
+    array_tabla_precios=[]
+    array_tabla_modelos=[]
     
 }
 
