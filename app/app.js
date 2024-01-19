@@ -61,6 +61,10 @@ function eliminarElemento(e){
     vecino.remove()
     console.log(cantidad_a_restar_limpia)
     colocar_total.innerText= "Total: "+total+" USD"
+    cantidad_productos-=1
+    carrito_flotante_productos.innerText= cantidad_productos
+    carrito_flotante_total.innerText=total+" USD"
+    
 }
 
 for (const elemento of info) {
