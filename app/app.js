@@ -20,28 +20,10 @@ close_carrito.addEventListener("click",()=>{
     carrito__.classList.replace("carrito_visible","carrito_invisible")
 })
 
-
-    
-    
-
 function mostrar_carrito(){
     carrito__.classList.replace("carrito_invisible","carrito_visible")
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function pagar(){
     const lista_nombre = document.querySelectorAll(".td_a")
@@ -66,24 +48,6 @@ function pagar(){
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function eliminarElemento(e){
     let vecino = e.target.parentElement.parentElement;
     let cantidad_a_restar= e.target.parentElement.previousElementSibling.textContent
@@ -95,8 +59,6 @@ function eliminarElemento(e){
     console.log(cantidad_a_restar_limpia)
     colocar_total.innerText= "Total: "+total+" USD"
 }
-
-
 
 for (const elemento of info) {
     const btn_ropa=elemento.querySelector(".btn_ropa")
